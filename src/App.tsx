@@ -1,16 +1,11 @@
-import { Link } from "react-router-dom";
-import "./App.css";
+import Header from "./components/Header/Header";
 import RoutesApp from "./components/RoutesApp";
+import "./App.scss";
 
 function App() {
   return (
     <>
-      <header>
-        <Link to="/">
-          <div className="logo-top">Home</div>
-        </Link>
-        <h1>Ada Receitas</h1>
-      </header>
+      <Header />
       <RoutesApp />
     </>
   );

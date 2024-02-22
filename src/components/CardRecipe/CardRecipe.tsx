@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import styles from "./cardRecipe.module.scss";
 
 interface CardReceitaProps {
   recipe: {
@@ -10,49 +11,25 @@ interface CardReceitaProps {
     ingredients: Array<string>;
     instructions: Array<string>;
     prepTime: string;
-    servings: string;
-    vegetarian: boolean;
-    glutenFree: boolean;
-    videoUrl: null | string;
+    servings?: string;
+    vegetarian?: boolean;
+    glutenFree?: boolean;
+    videoUrl?: null | string;
   };
 }
 export default function CardRecipe(props: CardReceitaProps) {
   const {
-    recipe: {
-      id,
-      title,
-      description,
-      category,
-      image,
-      ingredients,
-      instructions,
-      prepTime,
-      servings,
-      vegetarian,
-      glutenFree,
-      videoUrl,
-    },
+    recipe: { id, title, description, image, prepTime, servings },
   } = props;
 
-  console.log(
-    category,
-
-    ingredients,
-    instructions,
-    prepTime,
-    servings,
-    vegetarian,
-    glutenFree,
-    videoUrl
-  );
   return (
     <Link to={`/details/${id}`}>
-      <div className="card-receita">
+      <div className={styles.cardRecipe}>
         <img src={image} alt="" />
-        <div className="content-card">
+        <div className={styles.contentCard}>
           <h4>{title}</h4>
           <p>{description}</p>
-          <div className="additional-information">
+          <div className={styles.additionalInformation}>
             <p>⏱️{prepTime}</p>
             <p>👪{servings}</p>
           </div>

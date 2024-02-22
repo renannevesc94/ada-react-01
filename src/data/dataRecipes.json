@@ -60,7 +60,7 @@
       "servings": "4 porções",
       "vegetarian": false,
       "glutenFree": true,
-      "videoUrl": "https://www.youtube.com/watch?v=VIDEO_ID"
+      "videoUrl": "https://www.youtube.com/embed/iimZiGHRVrA?si=VL9ZUJN4OG6pTVKQ"
     },
     {
       "id": 3,
@@ -138,7 +138,7 @@
       "servings": "1 porção",
       "vegetarian": true,
       "glutenFree": true,
-      "videoUrl": "https://www.youtube.com/watch?v=VIDEO_ID"
+      "videoUrl": "https://www.youtube.com/embed/sIvYdLHwv8A?si=xYrdl1CanpAvzZRz"
     }
   ]
 }

@@ -1,0 +1,46 @@
+.cardRecipe {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  width: 25vw;
+  height: 18vh;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 12px 0 0 12px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #7e7e7e;
+  box-shadow: 0px 1px 3px 0px;
+
+  .contentCard {
+    margin-left: 10px;
+    display: grid;
+    grid-template-rows: 25px 75px 1fr;
+    height: 100%;
+    align-items: center;
+  }
+
+  img {
+    width: 95%;
+    height: 90%;
+    border-radius: 12px 0 0 12px;
+  }
+
+  h4 {
+    text-align: center;
+  }
+}
+
+.additionalInformation {
+  color: #ed834e;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: transform 0.9s ease;
+  &:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
